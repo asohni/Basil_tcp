@@ -74,7 +74,7 @@ class SiTcp (TransferLayer):
             #DataByte=self.convertToByte(Data)
             DataByte=Data
             sock.connect((self.IP_ADDR,self.TCPPORT))
-            #sock.send(DataByte)
+            sock.send(DataByte)
             print DataByte
             print "Data sent to SiTCP....."
             #result=sock.recv(4096)
