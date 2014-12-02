@@ -72,7 +72,7 @@ class SiTcp (TransferLayer):
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         try:
             #DataByte=self.convertToByte(Data)
-            DataByte=Data
+            DataByte=str(Data)
             sock.connect((self.IP_ADDR,self.TCPPORT))
             sock.send(DataByte)
             print DataByte
